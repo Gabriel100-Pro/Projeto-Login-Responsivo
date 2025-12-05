@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background: url(./states/img-fundo-Login.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* ======== LAYOUT DESKTOP ======== */
+.container {
+    min-height: 100vh;
+    display: flex; /* left e right lado a lado */
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 40px;
+}
+
+/* LEFT */
+.container-left {
+    width: 50%;
+    margin-left: 10%;
+}
+
+.container-left h1 {
+    font-size: 48px;
+    margin-bottom: 18px;
+    color: #817e81;
+}
+
+.container-left p {
+    color: rgba(0, 0, 0, 0.9);
+    max-width: 600px;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+.container-left button {
+    width: 150px;
+    height: 40px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* RIGHT */
+.container-right {
+    width: 50%;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+/* FORMULÁRIO */
+.login-form {
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;  /* <<< FILHOS EM COLUNA */
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+    background-color: transparent;
+    border-radius: 12px;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.6);
+    
+}
+
+.login-form h2 {
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    background-color: transparent;
+    border: solid 1px white;
+}
+
+.login-form button {
+    width: 60%;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+button:hover{
+    transform:scale(1.1);
+    transition: 0.5s;
+    background: #fff;
+    color: #000000;
+}
+
+input::placeholder{
+    color: #949194;
+}
+/* ======== RESPONSIVO ======== */
+@media (max-width: 968px) {
+
+    .container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .container-left,
+    .container-right {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Form auto responsivo no mobile */
+    .login-form {
+        width: 90%;
+        max-width: 400px;
+        height: auto;
+        padding: 24px;
+    }
+}
