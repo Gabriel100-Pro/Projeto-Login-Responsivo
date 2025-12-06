@@ -24,7 +24,7 @@
                 Reprehenderit tempora eligendi consequuntur quas velit quibusdam earum unde.
             </p>
 
-            <button>Geet Started</button>
+            <button>Geet Started</butt  n>
         </section>
 
         <!-- RIGHT -->
@@ -34,15 +34,27 @@
                 <h2>Login</h2>
 
                 <input type="text" placeholder="Name">
-                <input type="email" placeholder="Email">
+                <input type="email"autocomplete="email" placeholder="Email">
                 <input type="password" placeholder="Password">
+                <input class="reset" type="reset">
 
-                <button type="submit">Login</button>
+                <button id="cadastro" type="submit">Login</button>
             </form>
 
         </section>
 
     </div>
+<div id="spinnerOverlay">
+        <div class="spinner-border"></div>
+    </div>
 
+    <!-- Modal -->
+    <div id="modalOverlay">
+        <div id="modal">
+            <h2>✅ Enviado com sucesso!</h2>
+            <button id="fecharBtn">OK</button>
+        </div>
+    </div>
+    <script src="functions.js"></script>
 </body>
 </html>
