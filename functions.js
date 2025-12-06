@@ -1,21 +1,15 @@
-const botao = document.getElementById("cadastro");
-    const spinnerOverlay = document.getElementById("spinnerOverlay");
-    const modalOverlay = document.getElementById("modalOverlay");
-    const fecharBtn = document.getElementById("fecharBtn");
 
-    botao.addEventListener("click", (e) => {
-      e.preventDefault();
+document.querySelector(".login-form").addEventListener("submit", function(e) {
+    e.preventDefault(); // evita reload da página
 
-      // Mostra spinner
-      spinnerOverlay.style.display = "flex";
+    document.getElementById("spinner").style.display = "flex";
 
-      // Depois de 2s, troca spinner pelo modal
-      setTimeout(() => {
-        spinnerOverlay.style.display = "none";
-        modalOverlay.style.display = "flex";
-      }, 2000);
-    });
+    setTimeout(() => {
+        document.getElementById("spinner").style.display = "none";
+        document.getElementById("successBox").style.display = "flex";
+    }, 3000); // tempo do carregamento
+});
 
-    fecharBtn.addEventListener("click", () => {
-      modalOverlay.style.display = "none";
-    });
+document.getElementById("okBtn").addEventListener("click", function() {
+    document.getElementById("successBox").style.display = "none";
+});
