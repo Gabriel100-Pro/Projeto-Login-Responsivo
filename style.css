@@ -66,6 +66,16 @@ body {
     align-items: center; 
 }
 
+.menssagem{
+    background: transparent;
+    padding: 30px 40px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    border: solid 1px white;
+    backdrop-filter: blur(6px);
+}
+
 /* FORMULÁRIO */
 .login-form {
     width: 300px;
