@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <!-- IMPORTANDO O CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <div class="container">
@@ -16,15 +18,25 @@
         <section class="container-left">
             <h1>Easy shopping Via Mobile</h1>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Reprehenderit tempora eligendi consequuntur quas velit quibusdam earum unde.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Reprehenderit tempora eligendi consequuntur quas velit quibusdam earum unde.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Reprehenderit tempora eligendi consequuntur quas velit quibusdam earum unde.
             </p>
 
-            <button>Get Started</butt  n>
+            <!-- From Uiverse.io by vinodjangid07 -->
+             <a href="pastas.html">
+            <button class="Btn">
+                Go for assets
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-arrow-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                </svg>
+            </button>
+            </a>
         </section>
 
         <!-- RIGHT -->
@@ -36,27 +48,31 @@
                 <input type="text" placeholder="Name">
                 <input type="email" id="email" autocomplete="email" placeholder="Email">
                 <input type="password" id="senha" placeholder="Password">
-                <input class="reset" type="reset">
+                <div class="botoes">
+                    <button class="Btn" type="reset"> Redefinir</button>
 
-                <button id="cadastro" type="submit">Login</button>
-                
+                    <button class="Btn" id="cadastro" type="submit">Login</button>
+                </div>
+
+
             </form>
 
         </section>
 
     </div>
-<!-- SPINNER (bolinha de carregamento) -->
-<div class="spinner-overlay" id="spinner">
-    <div class="spinner"></div>
-</div>
-
-<!-- MENSAGEM DE SUCESSO -->
-<div class="success-overlay" id="successBox">
-    <div class="success-box">
-        <p>✔ Enviado com sucesso</p>
-        <button id="okBtn">OK</button>
+    <!-- SPINNER (bolinha de carregamento) -->
+    <div class="spinner-overlay" id="spinner">
+        <div class="spinner"></div>
     </div>
-</div>
-<script src="functions.js"></script>
+
+    <!-- MENSAGEM DE SUCESSO -->
+    <div class="success-overlay" id="successBox">
+        <div class="success-box">
+            <p>✔ Enviado com sucesso</p>
+            <button id="okBtn">OK</button>
+        </div>
+    </div>
+    <script src="functions.js"></script>
 </body>
+
 </html>

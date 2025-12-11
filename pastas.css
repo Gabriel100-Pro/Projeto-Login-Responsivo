@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+   background: url(./img-fundo-Login.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+}
+
+header {
+    background-color: rgb(0, 0, 0);
+    padding: 25px 0;
+    text-align: center;
+    
+
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+ nav a {
+    text-decoration: none;
+    margin-left: 20px;
+    color: white;
+    align-items: center;
+    
+}
+
+ a:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    text-decoration: underline;
+    color: rgb(0, 226, 71);
+    
+}
+
+nav .btn-1{
+    position: absolute;
+    right: 0;
+    margin-right: 150px;
+ }
+
+
+ nav .btn{
+    position: absolute;
+    right: 0;
+    margin-right: 35px;
+ }
+
+ button{
+    padding: 5px 5px;
+    border-radius: 3px;
+    border: none;
+    background-color: rgb(0, 226, 71);
+    color: white;
+    cursor: pointer;
+ }
+
+ button:hover{
+    background-color: rgb(0, 179, 56);
+    transition: 0.5s;
+    color: wheat;
+ }
+
+ .space{
+    margin-top: 50px;
+    text-align: center;
+    width: 100%;
+
+
+ }
+
+ .space p{
+    padding: 0 100px;
+    font-size: 20px;
+    
+ }
+
+ .box{
+   padding: 10px 20px;
+    display: inline-block;
+    width: 22%;
+    min-width: 300px;
+    margin-right: 1%;
+    vertical-align: middle;
+     border-radius: 5px;
+     aspect-ratio: 300/150;
+     margin-top: 40px;
+     color: white;
+     font-size: 24px;
+     cursor: pointer;
+     position: relative;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     box-shadow: 0 12px 30px rgba(0,0,0,0.6);
+     
+ }
+
+ span{
+      font-size: 28px;
+      font-weight: bold;
+      display: block;   
+      margin-bottom: 10px;
+ }
+
+ .texto{
+    width: 100%;
+    
+ }
+
+ .texto p{
+   font-size: 10px;
+   font-family: Arial, Helvetica, sans-serif;
+   padding: 0 ;
+   color: rgb(159, 152, 152);
+   
+
+ }
+ .box:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.7);
+    opacity: 1;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.6);
+ }
+ 
+ .box .text-box{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+ }
+
+ .container{
+    margin: 50px;
+    text-align: center;
+ }
+ 

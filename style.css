@@ -31,6 +31,7 @@ body {
 .container-left {
     width: 50%;
     margin-left: 10%;
+    
 }
 
 .container-left h1 {
@@ -44,18 +45,58 @@ body {
     max-width: 600px;
     line-height: 1.5;
     font-size: 14px;
+    margin-bottom: 20px;
 }
 
-.container-left button {
-    width: 150px;
-    height: 40px;
-    background-color: #000;
-    color: #fff;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    margin-top: 20px;
-    font-weight: bold;
+/* From Uiverse.io by vinodjangid07 */ 
+.Btn {
+  width: 130px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(15, 15, 15);
+  border: none;
+  color: white;
+  font-weight: 600;
+  gap: 8px;
+  cursor: pointer;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.103);
+  position: relative;
+  overflow: hidden;
+  transition-duration: .3s;
+}
+
+.svgIcon {
+  width: 16px;
+}
+
+.svgIcon path {
+  fill: white;
+}
+
+.Btn::before {
+  width: 130px;
+  height: 130px;
+  position: absolute;
+  content: "";
+  background-color: white;
+  border-radius: 50%;
+  left: -100%;
+  top: 0;
+  transition-duration: .3s;
+  mix-blend-mode: difference;
+}
+
+.Btn:hover::before {
+  transition-duration: .3s;
+  transform: translate(100%,-50%);
+  border-radius: 0;
+}
+
+.Btn:active {
+  transform: translate(5px,5px);
+  transition-duration: .3s;
 }
 
 /* RIGHT */
@@ -108,41 +149,26 @@ body {
     border: solid 1px white;
 }
 
-.login-form button {
-    width: 60%;
-    padding: 10px;
-    border: none;
-    background: #000;
-    color: #fff;
-    cursor: pointer;
-    border-radius: 6px;
-    font-weight: bold;
+.login-form input:focus {
+    outline: none;
+    border: solid 1px #e494fa;
 }
 
-input.reset{
-    background-color: #000;
-    color: whitesmoke;
-    cursor: pointer;
-    font-weight: 700;
-   border: none;
-}
-
-input.reset:hover{
-    transform:scale(1.1);
-    transition: 0.5s;
-    background: #fff;
-    color: #000000;
-}
-
-button:hover{
-    transform:scale(1.1);
-    transition: 0.5s;
-    background: #fff;
-    color: #000000;
-}
 
 input::placeholder{
     color: #949194;
+}
+
+.botoes {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+   
+}
+
+.botoes .Btn {
+    width: 45%;
 }
 /* Fundo escuro com spinner */
 .spinner-overlay {
