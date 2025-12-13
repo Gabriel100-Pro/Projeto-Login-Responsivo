@@ -7,16 +7,16 @@
 </head>
 <body>
 
-  <h1>🛒 Easy Shopping Via Mobile</h1>
+   <h1 align="center">🛒 Easy Shopping Via Mobile </h1>
 
-  <p>
+  <p align="center">
     💻 Projeto <strong>front-end </strong> feito pra treinar
     <strong>layout, responsividade e JS raiz</strong>.<br>
     Ultilizei:
     <br>
     <br>
-    <img src="https://img.shields.io/badge/HTML5-E34F26.svg?style=for-the-badge&logo=HTML5&logoColor=white" alt="img-HTML5"> <br>
-    <img src="https://img.shields.io/badge/CSS-663399.svg?style=for-the-badge&logo=CSS&logoColor=white" alt="img-css"><br>
+    <img src="https://img.shields.io/badge/HTML5-E34F26.svg?style=for-the-badge&logo=HTML5&logoColor=white" alt="img-HTML5"> 
+    <img src="https://img.shields.io/badge/CSS-663399.svg?style=for-the-badge&logo=CSS&logoColor=white" alt="img-css">
     <img src="https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=for-the-badge&logo=JavaScript&logoColor=black" alt="img-JS">
   </p>
 
@@ -51,7 +51,7 @@
   </ul>
 
   <p>
-    Ainda não implementei React, logo irei ultilizar 😎
+    🚀 React ainda não foi implementado, mas será utilizado futuramente.
   </p>
 
   <hr>
