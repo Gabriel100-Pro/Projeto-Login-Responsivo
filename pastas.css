@@ -146,3 +146,93 @@ nav .btn-1{
     text-align: center;
  }
  
+/* Ícones no canto superior direito */
+/* Ícones escondidos no desktop */
+.icon {
+   display: none;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    font-size: 35px;
+    color: white;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+/* Garante que o X nunca aparece junto antes do JS */
+#closeIcon {
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 100%;
+    background: transparent;
+    backdrop-filter: blur(8px);
+    color: white;
+    transition: 0.3s ease;
+    padding: 20px;
+    z-index: 9998;
+    display: none;
+}
+
+
+
+
+.sidebar button{ 
+   background: none;
+    color: white;
+    border: none;
+    font-size: 26px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.sidebar h2 {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 10px;
+    text-align: center  ;
+    
+}
+
+.sidebar a {
+   color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 14px 0;
+    border-bottom: 1px solid #444;
+    display: block;
+    
+}
+.sidebar.active {
+    right: 0;
+}
+
+@media (max-width: 968px) {
+    header {
+        display: none;
+    }
+.icon{
+   display: flex;
+}
+
+.sidebar{
+   display: flex;
+}
+    /* Ícone menu aparece no mobile */
+    #menuIcon {
+        opacity: 1;
+        pointer-events: auto;
+    }
+    .sidebar-filhos{
+      margin-top: 30px;
+    }
+    
+}
+
