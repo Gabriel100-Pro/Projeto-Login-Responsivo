@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Easy Shopping Via Mobile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    :root {
+      --bg: #f5f5f5;
+      --text: #111;
+      --card: #ffffff;
+      --accent: #4f46e5;
+      --border: #ddd;
+    }
+
+    body.dark {
+      --bg: #0f172a;
+      --text: #e5e7eb;
+      --card: #020617;
+      --accent: #38bdf8;
+      --border: #1e293b;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      transition: 0.3s;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 30px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 25px;
+      margin-bottom: 25px;
+    }
+
+    h1, h2 {
+      margin-top: 0;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    code, pre {
+      background: rgba(0,0,0,0.15);
+      padding: 6px;
+      border-radius: 6px;
+      display: inline-block;
+      color: var(--accent);
+    }
+
+    pre {
+      width: 100%;
+      overflow-x: auto;
+      color: var(--text);
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 30px 0;
+    }
+
+    .toggle {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: var(--accent);
+      color: #000;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <button class="toggle" onclick="toggleDark()">🌙 Dark</button>
+
+  <div class="container">
+    <img src="" alt="">
+    <div class="card">
+      <h1>🛒 Easy Shopping Via Mobile</h1>
+      <p>
+        💻 Projeto <strong>front-end raiz</strong> feito pra treinar
+        <strong>layout, responsividade e JS no DOM</strong>.<br>
+        Sem framework, sem frescura — só
+        <strong>HTML + CSS + JavaScript</strong> 🚀
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>🧠 O que tem aqui?</h2>
+      <ul>
+        <li>🏠 Landing page + Login (<code>index.html</code>)</li>
+        <li>📦 Página de planos / assets (<code>pastas.html</code>)</li>
+        <li>📱 Menu mobile (hambúrguer)</li>
+        <li>🔄 Spinner fake de loading</li>
+        <li>✅ Feedback de sucesso</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>⚙️ Features</h2>
+      <ul>
+        <li>📐 Layout responsivo</li>
+        <li>🍔 Menu mobile sem framework</li>
+        <li>🧠 JavaScript puro manipulando DOM</li>
+        <li>🔗 Navegação entre páginas HTML</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>🛠️ Stack</h2>
+      <ul>
+        <li>🧱 HTML5</li>
+        <li>🎨 CSS3 (Flexbox / Grid)</li>
+        <li>⚡ JavaScript Vanilla</li>
+      </ul>
+      <p>Nada de React. Nada de build. Nada de <code>node_modules</code> gigante 😎</p>
+    </div>
+
+    <div class="card">
+      <h2>📂 Estrutura</h2>
+      <pre>
+📁 projeto
+│-- index.html
+│-- pastas.html
+│-- style.css
+│-- pastas.css
+│-- functions.js
+│-- pastas.js
+│-- 📁 paginas
+│   └── stock.html
+      </pre>
+    </div>
+
+    <div class="card">
+      <h2>👨‍💻 Dev</h2>
+      <p>
+        <strong>Gabriel Carlos</strong> 👨‍💻 <br>
+        Front-end em evolução constante 🚀
+      </p>
+      <p>Curtiu? Deixa uma ⭐ no repo 😉</p>
+    </div>
+
+  </div>
+
+  <script>
+    function toggleDark() {
+      document.body.classList.toggle('dark');
+    }
+  </script>
+
+</body>
+</html>

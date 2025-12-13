@@ -13,3 +13,14 @@ document.querySelector(".login-form").addEventListener("submit", function(e) {
 document.getElementById("okBtn").addEventListener("click", function() {
     document.getElementById("successBox").style.display = "none";
 });
+const menuIcon = document.getElementById("menuIcon");
+const mobileMenu = document.getElementById("mobileMenu");
+const closeMenu = document.getElementById("closeMenu");
+
+menuIcon.addEventListener("click", () => {
+    mobileMenu.style.display = "flex";
+});
+
+closeMenu.addEventListener("click", () => {
+    mobileMenu.style.display = "none";
+});
