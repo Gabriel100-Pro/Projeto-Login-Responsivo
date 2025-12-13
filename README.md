@@ -52,7 +52,7 @@
 
   <p>
     🚀 React ainda não foi implementado, mas será utilizado futuramente.
-    <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Gabriel100-Pro&theme=tokyonight" />
+ 
   </p>
 
   <hr>
